@@ -3,7 +3,7 @@ timl
 
 tools in my locker
 
-The purpose of this repository is to store build artefacts. What do I mean by that? Well scripts, binaries, that I have used over the years to help build development environments. This is a practice I have used for many years now and decided that I should make it public.
+The purpose of this repository is to store build artefacts. What do I mean by that? Well scripts, configs that I have used over the years to help build development environments. This is a practice I have used for many years now and decided that I should make it public.
 
 I've worked on many sorts of environments, from Windows c#.Net to Linux Ruby so there should be a good mix.
 
