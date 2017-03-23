@@ -1,0 +1,12 @@
+#!/bin/bash
+
+core_packages() {
+  apt-get install -y vim tree atop git 
+}
+
+vim() {
+  cp ../.vimrc ~/
+}
+
+core_packages
+vim
