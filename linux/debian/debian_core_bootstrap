@@ -11,7 +11,7 @@ timl() {
 
 configs() {
   ln -s timl/linux/.vimrc .
-  ln -s timl/linux/.tmux.conf .
+  ln -s timl/linux/.tmux.conf_old_syntax .tmux.conf
 }
 
 core_packages
