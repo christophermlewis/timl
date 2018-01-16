@@ -1,7 +1,7 @@
 timl
 ====
 
-tools in my locker
+Tools In My Locker
 
 The purpose of this repository is to store build artefacts. What do I mean by that? Well scripts, configs that I have used over the years to help build development environments. This is a practice I have used for many years now and decided that I should make it public.
 
