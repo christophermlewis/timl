@@ -1,0 +1,46 @@
+# Remap prefix
+unbind C-b
+set -g prefix C-Space
+
+#Reload tmux config
+bind-key r source-file ~/.tmux.conf
+
+bind y copy-mode
+
+#Use vim key bindings in copy mode
+setw -g mode-keys vi
+
+#Vim style copy and paste
+unbind [
+bind Escape copy-mode
+unbind p
+bind p paste-buffer
+bind-key -t vi-copy 'v' begin-selection
+bind-key -t vi-copy 'y' copy-selection
+
+#Move around panes with hjkl, as one would in vim
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+#Sort next  window
+unbind m
+bind-key m next-window
+
+#Sort previous window
+unbind n
+bind-key n previous-window
+
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+
+# Other examples:
+# set -g @plugin 'github_username/plugin_name'
+# set -g @plugin 'git@github.com/user/plugin'
+# set -g @plugin 'git@bitbucket.com/user/plugin'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
