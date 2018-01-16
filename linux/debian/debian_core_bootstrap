@@ -7,6 +7,8 @@ core_packages {
 
 timl {
   git clone git@github.com:christophermlewis/timl.git
+  git checkout vagrant
+  git pull
 }
 
 configs {
