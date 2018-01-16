@@ -1,12 +1,19 @@
 #!/bin/bash
+set -e 
 
-core_packages() {
-  apt-get install -y vim tree atop git 
+core_packages {
+  apt-get install -y tmux vim tree atop git 
 }
 
-vim() {
-  cp ../.vimrc ~/
+timl {
+  git clone git@github.com:christophermlewis/timl.git
+}
+
+configs {
+  ln -s timl/linux/.vimrc .
+  ln -s timl/linux/.tmux.conf .
 }
 
 core_packages
-vim
+timl
+configs
