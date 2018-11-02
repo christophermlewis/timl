@@ -1,0 +1,2 @@
+Example query of cloud watch
+aws logs filter-log-events --log-group-name "test-longterm-logs"  --interleaved  --query events[].[timestamp,message,logStreamName]  --output text | grep 15405 | less
